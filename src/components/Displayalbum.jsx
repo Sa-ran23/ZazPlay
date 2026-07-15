@@ -29,9 +29,10 @@ function Displayalbum() {
                         <div>
                             <img className='inline-block w-8' src="" alt="" />
                         </div>
-                        <div className='flex gap-2 items-center'>
-                            <b> Zeninzo Play</b> 3,400 <BiLike /> likes |
-                            <b>{songsData.length + " Songs"}</b> | {"About " + Math.floor(duration) + " Mins"}
+                        <div className='flex flex-warp item-center gap-2 text-sm sm:text-base'>
+                            <b> ZazPlay</b> 
+                            <span className="flex item-center gap-1">3,400 <BiLike /></span><span>|</span>
+                            <b>{songsData.length + " Songs"}</b> <span>|</span> <span>{"About " + Math.floor(duration) + " Mins"}</span>
                         </div>
                     </p>
                 </div>
@@ -52,7 +53,7 @@ function Displayalbum() {
                             {item.name}
                         </p>
                         <p className='text-[15px]'>{albumdata.name}</p>
-                        <p className='text-[15px]'>2 days ago</p>
+                        <p className='text-[15px] hidden md:block'>2 days ago</p>
                         <p className='text-[15px] text-center'>{item.duration}</p>
                     </div>
                 ))
