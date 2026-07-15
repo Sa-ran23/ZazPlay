@@ -5,6 +5,7 @@ import { albumsData, assets, songsData } from '../assets/assets';
 // import play_logo from "../../public/play_logo_bg.png"
 import { BiLike } from "react-icons/bi";
 import { PlayerContext } from '../context/PlayerContext';
+import zazlogo from "../assets/zaz_logbg.png";
 
 function Displayalbum() {
     const { id } = useParams();
@@ -27,7 +28,7 @@ function Displayalbum() {
                     <h4>{albumdata.desc}</h4>
                     <p className='mt-2 flex items-center gap-1'>
                         <div>
-                            <img className='inline-block w-8' src="" alt="" />
+                            <img className='inline-block w-8' src={zazlogo} alt="" />
                         </div>
                         <div className='flex flex-warp item-center gap-2 text-sm sm:text-base'>
                             <b> ZazPlay</b> 
